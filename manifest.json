@@ -1,0 +1,16 @@
+{
+	"name": "Reddit top of all time",
+	"version": "1.0",
+	"description": "Makes subreddits default to top of all time.",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["index.js"]
+		}
+	],
+	"permissions": [
+		"*://*/*",
+		"tabs"
+	]
+}
